@@ -1,13 +1,54 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!--
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="jakarta.faces.html">
     <h:head>
         <title>Facelet Title</title>
     </h:head>
     <h:body>
-        Hello from Facelets  
+        He<html xmlns="http://www.w3.org/1999/xhtml"
+      llo from Facelets  
         #{habilidadesAlumno.carrera}
         
     </h:body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <head>
+                <link rel="stylesheet" href="CSS\bootstrap-5.3.3-dist\css\bootstrap.min.css">
+
+        <meta charset="UTF-8">
+        <title>Investigación</title>
+        <!-- Agregar Bootstrap desde CDN -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="text-center">Detalles de la Investigación</h1>
+            
+            <!-- Panel de detalles de la investigación -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>#{investigacionBean.investigacion.titulo}</h2>
+                </div>
+                <div class="card-body">
+                    <p><strong>Descripción:</strong> #{investigacionBean.investigacion.descripcion}</p>
+                    <p><strong>Referencia:</strong> #{investigacionBean.investigacion.referencia}</p>
+                    <!-- Mostrar la imagen -->
+                    <img src="#{investigacionBean.investigacion.foto}" class="img-fluid" alt="Imagen de la investigación">
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="CSS/bootstrap-5.3.3-dist/js/bootstrap.min.js></script>
+    </body>
 </html>
